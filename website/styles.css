@@ -1,0 +1,130 @@
+#navLinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 17;
+}
+
+#navLinks li {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 12px;
+}
+
+a:link {
+    color: #181717;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #181717;
+}
+
+a:hover {
+
+}
+
+
+
+
+.programme {
+    width: 300px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.courseImg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* improve gradient */
+.img-gradient {
+    background: linear-gradient(to top, rgba(51, 42, 42, 0.8), rgba(255, 255, 255, 0));
+    background-position: center;
+    background-size: cover;
+}
+/* improve the css */
+.overlay-text {
+    position: absolute;
+    top: 670px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/* improve the css */
+.overlay-text2 {
+    position: absolute;
+    top: 1075px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+footer {
+    background-color: #0A5993;
+
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.prog-img {
+    width: 1400px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 45px;
+}
+
+.sew-img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    left: 800px;
+    margin-right: 30px;
+    bottom: 120px;
+}
+
+.btn {
+    background-color: #2C2C2C;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    right: 1330px;
+    position: absolute;
+    margin-top: 20px ;
+    font-size: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.purpose{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+h1, h2, p, li {
+    margin-left: 20px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.em;
+}
