@@ -1,3 +1,35 @@
+#navLinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 17;
+}
+
+#navLinks li {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 12px;
+}
+
+a:link {
+    color: #181717;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #181717;
+}
+
+a:hover {
+
+}
+
+
+
+
 /* The figure of each course */
 .programme {
     width: 300px;
