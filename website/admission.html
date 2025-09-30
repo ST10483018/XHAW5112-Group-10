@@ -8,24 +8,93 @@
   </head>
   <body>
     <div id="wrapper">
-        <header>
-            <img  src="_Images/logo.png" alt="XHAW Logo" id="logo">
-            <!-- Heading of page -->
-            <h1></h1>
-            <!-- Image slider -->
-            <img>
-            <!-- Navigation bar -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home page</a></li>
-                    <li><a href="progammes.html">Programmes</a></li>
-                    <li class=""><a>Admission</a></li>
-                    <li><a href="updates.html">Updates</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+      <header>
+        <img src="_Images/logo.png" alt="XHAW Logo" id="logo" />
+        <!-- Heading of page -->
+        <h1></h1>
+        <!-- Image slider -->
+        <img />
+        <!-- Navigation bar -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="progammes.html">Programmes</a></li>
+            <li class=""><a>Admission</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h3>
+        Please fill your details below together with the courses you are
+        interested in taking part of.
+      </h3>
+      <br />
+      <!--users information input-->
+      <section class="admission-section">
+        <div class="form-container">
+          <h2>Admission Form</h2>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+
+            <label for="surname">Surname:</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Surname"
+              required
+            />
+
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+
+            <label for="password">Password:</label>
+            <img src="_Images/eye-close.png" alt="closed eye image">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+              required
+            />
+
+            <label for="id">ID/Passport:</label>
+            <input type="text" id="id" name="id" required />
+
+            <label for="address">Physical Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <!--selction boxwith programs-->
+            <label for="programs">Select Programes:</label>
+            <select id="programs" name="programs[]" multiple>
+              <option value="sewing">Sewing R1500</option>
+              <option value="firstaid">First Aid R1500</option>
+              <option value="landscaping">Landscaping R1500</option>
+              <option value="lifeskills">Life Skills R1500</option>
+              <option value="garden">Garden Maintenance R750</option>
+              <option value="garden">Cooking R750</option>
+              <option value="garden">Child Minding R750</option>
+            </select>
+
+            <button type="submit" class="submitBtn">Submit Application</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>
