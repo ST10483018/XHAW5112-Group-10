@@ -171,10 +171,17 @@ h1, h2, p, li {
 
 
 
-
+.heading {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 .slider {
-    width: 800px;
+    width: 1100px;
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
@@ -197,7 +204,7 @@ h1, h2, p, li {
 }
 
 .slide img {
-    width: 800px;
+    width: 1100px;
     height: 300px;
 }
 
@@ -205,7 +212,7 @@ h1, h2, p, li {
 
 .navigation-manual {
     position: absolute;
-    width: 800px;
+    width: 1100px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -260,7 +267,7 @@ h1, h2, p, li {
 .navigation-auto {
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 1100px;
     justify-content: center;
     margin-top: 260px;
 }
