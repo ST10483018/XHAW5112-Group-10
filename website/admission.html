@@ -29,24 +29,48 @@
       <h3>
         Please fill your details below together with the courses you are
         interested in taking part of.
-      </h3> 
-      <br>
+      </h3>
+      <br />
       <!--users information input-->
       <section class="admission-section">
         <div class="form-container">
           <h2>Admission Form</h2>
           <form action="#" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
 
             <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" placeholder="Surname" required />
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Surname"
+              required
+            />
 
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="password" required />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+              required
+            />
 
             <label for="id">ID/Passport:</label>
             <input type="text" id="id" name="id" required />
@@ -54,7 +78,8 @@
             <label for="address">Physical Address:</label>
             <textarea id="address" name="address" rows="4" required></textarea>
 
-            <label for="programs">Select Programmes:</label>
+            <!--selction boxwith programs-->
+            <label for="programs">Select Programes:</label>
             <select id="programs" name="programs[]" multiple>
               <option value="sewing">Sewing R1500</option>
               <option value="firstaid">First Aid R1500</option>
@@ -65,7 +90,7 @@
               <option value="garden">Child Minding R750</option>
             </select>
 
-            <button type="submit" class="submit-btn">Submit Application</button>
+            <button type="submit" class="submitBtn">Submit Application</button>
           </form>
         </div>
       </section>
