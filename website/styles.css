@@ -141,27 +141,6 @@ h1, h2, p, li {
 }
 
 
-/*admissions page alignment*/
-.admission-section {
-  display: flex;
-  justify-content: center;
-  padding: 50px 20px;
-  background: #f9f9f9;
-}
-
-.form-container {
-  background: #e9e9e9;
-  padding: 30px;
-  width: 500px;
-  max-width: 600px;
-  height: 600px;
-  border-radius: 40px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-
-
-
 .heading {
     margin: 0;
     padding: 0;
@@ -299,3 +278,4 @@ h1, h2, p, li {
   from {opacity: .4} 
   to {opacity: 1}
 }
+

@@ -34,73 +34,45 @@
 
       <!--users information input-->
       <section class="admission-section">
-        <div class="form-container">
-          <h2>Admission Form</h2>
+    <div class="form-container">
+      <h2>Admission Form</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" required>
 
-          <p>
-            Please fill your details below together with the courses you are
-            interested in taking part of.
-          </p>
+        <label>Surname:</label>
+        <input type="text" required>
 
-          <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-            />
+        <label>Email Address:</label>
+        <input type="email" required>
 
-            <label for="surname">Surname:</label>
-            <input
-              type="text"
-              id="surname"
-              name="surname"
-              placeholder="Surname"
-              required
-            />
+        <label>Password:</label>
+        <input type="password" required>
 
-            <label for="email">Email Address:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email"
-              required
-            />
+        <label>ID/Passport:</label>
+        <input type="text" required>
 
-            <label for="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="password"
-              required
-            />
+        <label>Physical Address:</label>
+        <textarea rows="4" required></textarea>
 
-            <label for="id">ID/Passport:</label>
-            <input type="text" id="id" name="id" required />
-
-            <label for="address">Physical Address:</label>
-            <textarea id="address" name="address" rows="4" required></textarea>
-
-            <!--selction boxwith programs-->
-            <label for="programs">Select Programes:</label>
-            <select id="programs" name="programs[]" multiple>
-              <option value="sewing">Sewing R1500</option>
-              <option value="firstaid">First Aid R1500</option>
-              <option value="landscaping">Landscaping R1500</option>
-              <option value="lifeskills">Life Skills R1500</option>
-              <option value="garden">Garden Maintenance R750</option>
-              <option value="garden">Cooking R750</option>
-              <option value="garden">Child Minding R750</option>
-            </select>
-
-            <button type="submit" class="submitBtn">Submit Application</button>
-          </form>
+        <!-- Custom Multi-Select -->
+        <label>Select Programmes:</label>
+        <div class="custom-select">
+          <div class="selected-tags" id="selectedTags"></div>
+          <div class="dropdown-toggle" id="dropdownToggle">▼ Select Courses</div>
+          <div class="options" id="options">
+            <div data-value="Sewing" data-price="1500">Sewing - R1500</div>
+            <div data-value="First Aid" data-price="1500">First Aid - R1500</div>
+            <div data-value="Landscaping" data-price="1500">Landscaping - R1500</div>
+            <div data-value="Life Skills" data-price="1500">Life Skills - R1500</div>
+            <div data-value="Garden Maintenance" data-price="750">Garden Maintenance - R750</div>
+          </div>
         </div>
-      </section>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </div>
+  </section>
     </div>
   </body>
 </html>
