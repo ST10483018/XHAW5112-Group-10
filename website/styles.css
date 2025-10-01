@@ -52,13 +52,13 @@ body {
   color: #0A5993;
 }
 
-/* ===== Active Page Indicator ===== */
+/*Active Page Indicator */
 .navbar ul li a.active {
   color: #ffd700;
   border-bottom: 2px solid #ffd700;
 }
 
-/* ===== Responsive Design ===== */
+/* Responsive Design*/
 @media (max-width: 768px) {
   .navbar .navdiv {
     flex-direction: column;
