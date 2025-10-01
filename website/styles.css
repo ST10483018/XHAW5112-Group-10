@@ -86,9 +86,9 @@ body {
 .programme {
     width: 300px;
     display: inline-block;
-    margin-right: 30px;
     margin-top: 80px;
     margin-bottom: 80px;
+    margin-left:50px ;
 }
 /* course images */
 .courseImg {
@@ -102,7 +102,7 @@ body {
 /* text for the overlay */
 .overlay-text {
     position: absolute;
-    top: 580px;
+    top: 540px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -112,7 +112,7 @@ body {
 /* text for overlay of 6 week courses */
 .overlay-text2 {
     position: absolute;
-    top: 1110px;
+    top: 1075px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
