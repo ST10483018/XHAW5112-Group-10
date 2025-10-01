@@ -216,12 +216,14 @@ h1, h2, p, li {
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .slides {
     width: 500%;
     height: 300px;
     display: flex;
+    object-fit: cover;
 
 }
 
@@ -250,7 +252,7 @@ h1, h2, p, li {
 }
 
 .manual-btn {
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -262,7 +264,7 @@ h1, h2, p, li {
 }
 
 .manual-btn:hover {
-    background: black;
+    background: white;
 }
 
 #radio1:checked ~ .first {
@@ -304,7 +306,7 @@ h1, h2, p, li {
 }
 
 .navigation-auto div {
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -316,23 +318,23 @@ h1, h2, p, li {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: black;
+    background: white;
 } 
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: black;
+    background: white;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: black;
+    background: white;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: black;
+    background: white;
 }
 
 #radio5:checked ~ .navigation-auto .auto-btn5 {
-    background: black;
+    background: white;
 }
 
 @keyframes fade {
