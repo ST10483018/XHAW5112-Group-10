@@ -120,7 +120,7 @@ body {
 
 }
 /* footer */
-footer {
+.footer {
     background-color: #0A5993;
 
     color: white;
@@ -427,11 +427,4 @@ form textarea {
 }
 }
 
-#moto {
-  text-align: center;
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  position: absolute;
-  top: 500px;
-}
+
