@@ -1,4 +1,3 @@
-console.log("✅ script.js is connected!");
 
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownToggle = document.getElementById("dropdownToggle");
