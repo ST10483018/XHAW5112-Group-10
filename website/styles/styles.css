@@ -169,6 +169,10 @@ footer {
 /* headings */
 h1 {
     text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .purpose{
@@ -431,4 +435,13 @@ form textarea {
 }
 }
 
+#moto, #moto2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1em;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 1.6;
+}
 
