@@ -49,6 +49,7 @@ body {
 
 /* Hover effect */
 .navbar ul li a:hover {
+  cursor: pointer;
   color: #0A5993;
 }
 
