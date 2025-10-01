@@ -280,10 +280,11 @@ h1, h2, p, li {
   background-position: center;
 }
 
-
-
-
-
+/* home page fix*/
+.homeinfo {
+ padding-left: 0px;
+ padding-top: 1050px;
+}
 .heading {
     margin: 0;
     padding: 0;
