@@ -42,6 +42,8 @@
     width: 300px;
     display: inline-block;
     margin-right: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 /* course images */
 .courseImg {
@@ -51,17 +53,11 @@
     border-radius: 10px;
 }
 /* improve gradient */
-/* Gradient for the images */
-.img-gradient {
-    background: linear-gradient(to top, rgba(51, 42, 42, 0.8), rgba(255, 255, 255, 0));
-    background-position: center;
-    background-size: cover;
-}
 /* improve the css */
 /* text for the overlay */
 .overlay-text {
     position: absolute;
-    top: 670px;
+    top: 580px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -71,7 +67,7 @@
 /* text for overlay of 6 week courses */
 .overlay-text2 {
     position: absolute;
-    top: 1075px;
+    top: 1110px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -84,10 +80,12 @@ footer {
 
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 /* main courses header image*/
 .prog-img {
@@ -139,6 +137,24 @@ h1, h2, p, li {
     font-weight: bold;
     font-size: 1.em;
 }
+
+#ph1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#ph2 {
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+
+
+
 
 
 .heading {
