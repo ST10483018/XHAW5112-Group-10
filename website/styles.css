@@ -196,7 +196,89 @@ h1, h2, p, li {
 }
 
 
+.image-overlay {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
+    url("_Images/steptodown.com898711.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
+.image-overlay2 {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
+    url("_Images/steptodown.com443846.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-overlay3 {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
+    url("_Images/steptodown.com133499.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-overlay4 {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
+    url("_Images/group-of-young-people-talking.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-overlay5 {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
+    url("_Images/steptodown.com633227.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-overlay6 {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
+    url("_Images/steptodown.com469316.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-overlay7 {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
+    url("_Images/steptodown.com525012.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 
 
