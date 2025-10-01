@@ -20,12 +20,14 @@ body {
 .navbar .navdiv {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: baseline;
 }
 
 /* Logo */
 .navbar .logo a img {
   width: 60px;
+  height: 60px;
+  margin-top: -10%;
 }
 
 /*Navigation Links*/
