@@ -170,6 +170,7 @@ footer {
     position: absolute;
     margin-top: 20px ;
     font-size: 1em;
+    cursor: pointer;
 }
 /* headings */
 h1 {
