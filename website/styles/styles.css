@@ -13,8 +13,10 @@ body {
 .navbar {
   background: #8f8e8e;
   padding: 15px 30px;
-  width: 100%;
-  height: 70px;
+  width: 97%;          /* adjust this percentage or set px (e.g., 900px) */
+  height: 60px;
+  position: relative;
+  margin-left: auto;   /* shifts the bar to the right side */
 }
 
 .navbar .navdiv {
@@ -25,15 +27,18 @@ body {
 
 /* Logo */
 .navbar .logo a img {
-  width: 60px;
-  height: 60px;
-  margin-top: -10%;
+  width: 80px;
+  position: absolute;
+  top: 0px;    /* adjust as needed */
+  left: -42px;  /* adjust as needed */
+  border-radius: 50%;  /* keep round if needed */
 }
 
 /*Navigation Links*/
 .navbar ul {
   display: flex;
   align-items: center;
+  margin-left: 5%;
 }
 
 .navbar ul li {
@@ -445,3 +450,6 @@ form textarea {
   line-height: 1.6;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
