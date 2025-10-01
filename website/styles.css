@@ -50,6 +50,7 @@ body {
 /* Hover effect */
 .navbar ul li a:hover {
   color: #0A5993;
+  cursor: pointer;
 }
 
 /*Active Page Indicator */
