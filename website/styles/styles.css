@@ -13,10 +13,10 @@ body {
 .navbar {
   background: #8f8e8e;
   padding: 15px 30px;
-  width: 97%;          /* adjust this percentage or set px (e.g., 900px) */
+  width: 97%;          
   height: 60px;
   position: relative;
-  margin-left: auto;   /* shifts the bar to the right side */
+  margin-left: auto;   
 }
 
 .navbar .navdiv {
@@ -29,9 +29,9 @@ body {
 .navbar .logo a img {
   width: 80px;
   position: absolute;
-  top: 0px;    /* adjust as needed */
-  left: -42px;  /* adjust as needed */
-  border-radius: 50%;  /* keep round if needed */
+  top: 0px;    
+  left: -42px; 
+  border-radius: 50%;  
 }
 
 /*Navigation Links*/
