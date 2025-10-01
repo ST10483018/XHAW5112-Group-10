@@ -50,7 +50,6 @@ body {
 /* Hover effect */
 .navbar ul li a:hover {
   color: #0A5993;
-  cursor: pointer;
 }
 
 /*Active Page Indicator */
@@ -59,7 +58,7 @@ body {
   border-bottom: 2px solid #ffd700;
 }
 
-/* Responsive Design*/
+/*Responsive Design*/
 @media (max-width: 768px) {
   .navbar .navdiv {
     flex-direction: column;
@@ -92,91 +91,6 @@ body {
     margin-bottom: 80px;
 }
 /* course images */
-
-.image-overlay {
-  width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  background: 
-    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
-    url("_Images/steptodown.com898711.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.image-overlay2 {
-  width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  background: 
-    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
-    url("_Images/steptodown.com443846.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.image-overlay3 {
-  width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  background: 
-    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
-    url("_Images/steptodown.com133499.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.image-overlay4 {
-  width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  background: 
-    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
-    url("_Images/group-of-young-people-talking.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.image-overlay5 {
-  width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  background: 
-    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
-    url("_Images/steptodown.com633227.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.image-overlay6 {
-  width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  background: 
-    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
-    url("_Images/steptodown.com469316.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.image-overlay7 {
-  width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  background: 
-    linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0)),
-    url("_Images/steptodown.com525012.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .courseImg {
     width: 300px;
     height: 300px;
@@ -188,7 +102,7 @@ body {
 /* text for the overlay */
 .overlay-text {
     position: absolute;
-    top: 540px;
+    top: 580px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -198,7 +112,7 @@ body {
 /* text for overlay of 6 week courses */
 .overlay-text2 {
     position: absolute;
-    top: 1070px;
+    top: 1110px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -302,12 +216,14 @@ h1, h2, p, li {
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .slides {
     width: 500%;
     height: 300px;
     display: flex;
+    object-fit: cover;
 
 }
 
@@ -336,7 +252,7 @@ h1, h2, p, li {
 }
 
 .manual-btn {
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -348,7 +264,7 @@ h1, h2, p, li {
 }
 
 .manual-btn:hover {
-    background: black;
+    background: white;
 }
 
 #radio1:checked ~ .first {
@@ -390,7 +306,7 @@ h1, h2, p, li {
 }
 
 .navigation-auto div {
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -402,23 +318,23 @@ h1, h2, p, li {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: black;
+    background: white;
 } 
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: black;
+    background: white;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: black;
+    background: white;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: black;
+    background: white;
 }
 
 #radio5:checked ~ .navigation-auto .auto-btn5 {
-    background: black;
+    background: white;
 }
 
 @keyframes fade {
@@ -433,21 +349,14 @@ h1, h2, p, li {
   font-family: Arial, sans-serif;
 }
 
-.contact-container{
-  background: #e9e9e9;
-  padding: 30px;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 40px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
+
 
 /* Admission section */
 .admission-section {
   display: flex;
   justify-content: center;
   padding: 50px 20px;
-  background: #ffffff;
+  background: #f4f4f4;
 }
 /* form container values*/
 .form-container {
@@ -536,7 +445,7 @@ form textarea {
 }
 
 .options div:hover {
-  background: #ffffff;
+  background: #f0f0f0;
 }
 
 .show {
