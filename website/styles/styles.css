@@ -119,22 +119,23 @@ html, body {
 /* text for the overlay */
 .overlay-text {
     position: absolute;
-    top: 540px;
+    top: 530px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-left: 20px;
 }
 /* improve the css */
 /* text for overlay of 6 week courses */
 .overlay-text2 {
     position: absolute;
-    top: 1075px;
+    top: 1065px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-
+    margin-left: 20px;
 }
 /* footer */
 footer {
