@@ -311,13 +311,13 @@ h1, h2, p, li {
   font-family: Arial, sans-serif;
 }
 
-/*  */
+/* alignment of maps */
 .map-container {
   display: flex;
   justify-content: center;
   padding: 50px 20px;
   background: #ffffff;
-  gap: 15px;
+  gap: 35px;
 }
 
 /* Admission section/ contact section */
