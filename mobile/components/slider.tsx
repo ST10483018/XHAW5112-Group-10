@@ -75,8 +75,8 @@ const slider = () => {
     //Displaying the images
     const renderItem = ({ item, index }: { item: { id: string; image: any }; index: number }) => {
         return (
-            <View>
-                <Image source={item.image} style={{height:160, width: ScreenWidth, marginTop: 65, borderRadius: 15, }} />
+            <View style={{ width: ScreenWidth, alignItems: "center" }}>
+                <Image source={item.image} style={{height:160, width: ScreenWidth * 0.95, marginTop: 65, borderRadius: 15, }} />
             </View>
         );
     };
