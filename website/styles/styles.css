@@ -311,9 +311,16 @@ h1, h2, p, li {
   font-family: Arial, sans-serif;
 }
 
+/*  */
+.map-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #ffffff;
+  gap: 15px;
+}
 
-
-/* Admission section */
+/* Admission section/ contact section */
 .admission-section {
   display: flex;
   justify-content: center;
