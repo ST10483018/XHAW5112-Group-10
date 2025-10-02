@@ -96,7 +96,9 @@ const slider = () => {
 
             if(activeIndex === index){
                 return(
-                    <View style={{
+                    <View
+                    key={index} 
+                    style={{
                     backgroundColor: "blue",
                     height: 10, 
                     width: 10, 
@@ -135,6 +137,7 @@ const slider = () => {
       horizontal = {true}
       pagingEnabled = {true}
       onScroll={handleScroll}
+      showsHorizontalScrollIndicator={false}
       />
 
       <View style={{flexDirection: "row", justifyContent: "center", marginTop: 10}}>
