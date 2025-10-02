@@ -1,6 +1,8 @@
 import { Text, View, TouchableOpacity, Image } from "react-native";
 import { useRouter } from "expo-router";
 import { StyleSheet } from "react-native";
+import Slider from "../components/slider";
+import slider from "../components/slider";
 
 export default function Index() {
   const router = useRouter();
@@ -8,6 +10,7 @@ export default function Index() {
     <View>
       <Image style={styles.image} source={require("@/_images/logo.png")} />
       <Text style={styles.container}>Empowering the Nation</Text>
+      <Slider/>
       <TouchableOpacity style={styles.bt2} onPress={() => router.push("../programmes")}>
         <Text>Programmes</Text>
       </TouchableOpacity>
@@ -124,6 +127,10 @@ const styles = StyleSheet.create({
     height: 64, 
     marginLeft: 20, 
     marginTop: 70
+  },
+
+  slider:{
+    marginTop: 150,
   }
 
 })
