@@ -350,6 +350,7 @@ form textarea {
 .custom-select {
   position: relative;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .selected-tags {
