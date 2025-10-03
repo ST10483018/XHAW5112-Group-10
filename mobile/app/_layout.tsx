@@ -12,6 +12,7 @@ export default function RootLayout() {
         <Stack.Screen name="contact" options={{headerShown: false}}/>
         <Stack.Screen name="updates" options={{headerShown: false}}/>
         <Stack.Screen name="admissions" options={{headerShown: false}}/>
+        <Stack.Screen name="program"options={{headerShown: false}} />
       </Stack>
 
     

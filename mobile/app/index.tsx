@@ -3,6 +3,7 @@ import { useRouter } from "expo-router";
 import { StyleSheet } from "react-native";
 import Slider from "../components/slider";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Carousel from "../components/carousel"
 
 const DATA = [
   { 
@@ -10,6 +11,7 @@ const DATA = [
     text: "Hello",
     description: "Founded in 2022, Empowering the Nation provides classes in Johannesburg. In order to empower themselves and equip them with more marketable skills, hundreds of gardeners and domestic workers have participated in the six-week Short Skills Training Programs and the six-month Learnerships."
   },
+  { id: "carousel", type: "carousel" },
   { id: "2", text: "Second item" },
   { id: "3", text: "Third item" },
 
@@ -42,20 +44,26 @@ export default function Index() {
 
       {/* Flat list */}
 
-      <FlatList style={styles.flatstyle}
+      <FlatList
+        style={styles.flatstyle}
         data={DATA}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <View style={styles.item}>
-            <Text style={styles.text}>{item.text}</Text>
-            {item.description && <Text style={styles.description}>{item.description}</Text>}
-          </View>
-        )}
+        renderItem={({ item }) => {
+          if (item.type === "carousel") {
+            return <Carousel />; // 👈 render Carousel when special item
+          }
+          return (
+            <View style={styles.item}>
+              <Text style={styles.text}>{item.text}</Text>
+              {item.description && (
+                <Text style={styles.description}>{item.description}</Text>
+              )}
+            </View>
+          );
+        }}
         showsVerticalScrollIndicator={false}
-        ListHeaderComponent={
-           <Slider />
-        }
-      contentContainerStyle={{ paddingTop: 75 }}
+        ListHeaderComponent={<Slider />}
+        contentContainerStyle={{ paddingTop: 75 }}
       />
     </SafeAreaView>
   );
