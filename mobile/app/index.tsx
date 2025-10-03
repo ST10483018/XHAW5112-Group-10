@@ -2,12 +2,13 @@ import { Text, View, TouchableOpacity, Image } from "react-native";
 import { useRouter } from "expo-router";
 import { StyleSheet } from "react-native";
 import Slider from "../components/slider";
-import slider from "../components/slider";
+import { SafeAreaView } from "react-native-safe-area-context";
+
 
 export default function Index() {
   const router = useRouter();
   return (
-    <View>
+    <SafeAreaView>
       <Image style={styles.image} source={require("@/_images/logo.png")} />
       <Text style={styles.container}>Empowering the Nation</Text>
       <Slider/>
@@ -23,7 +24,7 @@ export default function Index() {
       <TouchableOpacity style={styles.bt4} onPress={() => router.push("../updates")}>
         <Text>Updates</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -126,7 +127,7 @@ const styles = StyleSheet.create({
     width: 64, 
     height: 64, 
     marginLeft: 20, 
-    marginTop: 70
+    marginTop: 25
   },
 
   slider:{
