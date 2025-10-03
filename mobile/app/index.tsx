@@ -3,12 +3,13 @@ import { useRouter } from "expo-router";
 import { StyleSheet } from "react-native";
 import Slider from "../components/slider";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Carousel from "../components/carousel"
+import Carousel from "../components/carousel";
+import Drawermenu from "../components/drawermenu";
 
 const DATA = [
   { 
     id: "1", 
-    text: "Hello",
+    text: "What is Empowering the Nation",
     description: "Founded in 2022, Empowering the Nation provides classes in Johannesburg. In order to empower themselves and equip them with more marketable skills, hundreds of gardeners and domestic workers have participated in the six-week Short Skills Training Programs and the six-month Learnerships."
   },
   { id: "carousel", type: "carousel" },
@@ -50,7 +51,12 @@ export default function Index() {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => {
           if (item.type === "carousel") {
-            return <Carousel />; // 👈 render Carousel when special item
+            return  (
+      <View >
+        <Text style={styles.sectionHeading}>Programs</Text>
+        <Carousel />
+      </View>
+    ); // 👈 render Carousel when special item
           }
           return (
             <View style={styles.item}>
@@ -114,10 +120,14 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   text: {
-    fontSize: 18,
+  fontSize: 22,
+  fontWeight: "bold",
+  marginBottom: 20,
+  textAlign: "center",
+  color: "black",
   },
   description: {
-    fontSize: 12,
+    fontSize: 14,
   },
 
 navBar: {
@@ -198,6 +208,14 @@ navBtn4: {
     textAlign: 'center',
     fontWeight: 'bold',
     color: 'black',
-}
+},
+
+sectionHeading: {
+  fontSize: 22,
+  fontWeight: "bold",
+  marginBottom: 20,
+  textAlign: "center",
+  color: "black",
+},
 
 })

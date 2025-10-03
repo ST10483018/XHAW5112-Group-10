@@ -79,43 +79,43 @@ export default function Carousel() {
   const DATA = [
     {
       id: "sewing",
-      title: "First Item",
-      image: require("@/_images/steptodown.com443846.jpg"),
+      title: "Sewing",
+      image: require("@/_images/steptodown.com898711.jpg"),
     },
     {
-      id: "2",
-      title: "Second Item",
+      id: "landscaping",
+      title: "Landscaping",
       image: require("@/_images/steptodown.com133499.jpg"),
     },
     {
-      id: "3",
-      title: "Third Item",
+      id: "cooking",
+      title: "Cooking",
       image: require("@/_images/steptodown.com469316.jpg"),
     },
 
     {
-        id: "4",
-      title: "Third Item",
+        id: "child_minding",
+      title: "Child Minding",
       image: require("@/_images/steptodown.com525012.jpg"),
     },
 
     {
-        id: "5",
-      title: "Third Item",
+        id: "garden_maintenance",
+      title: "Garden Maintenance",
       image: require("@/_images/steptodown.com633227.jpg"),
     },
 
     
     {
-        id: "6",
-      title: "Third Item",
-      image: require("@/_images/steptodown.com898711.jpg"),
+        id: "first_aid",
+      title: "First Aid",
+      image: require("@/_images/steptodown.com443846.jpg"),
     },
 
     
     {
-        id: "7",
-      title: "Third Item",
+        id: "life_skills",
+      title: "Life Skills",
       image: require("@/_images/group-of-young-people-talking.jpg"),
     },
   ];
