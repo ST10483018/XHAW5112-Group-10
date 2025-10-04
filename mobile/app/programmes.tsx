@@ -1,11 +1,13 @@
-import { View, Text } from 'react-native'
+import { View, Text, } from 'react-native'
+import { SafeAreaView } from "react-native-safe-area-context";
 import React from 'react'
+import NavigationBar from "@/components/navigationbar";
 
 const programmes = () => {
   return (
-    <View>
-      <Text>programmes</Text>
-    </View>
+    <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
+      <NavigationBar />
+    </SafeAreaView>
   )
 }
 

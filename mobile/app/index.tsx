@@ -3,6 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import Slider from "../components/slider";
 import Carousel from "../components/carousel";
+import NavigationBar from "@/components/navigationbar";
 
 const DATA = [
   { 
@@ -19,29 +20,7 @@ export default function Index() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
-      {/* Top Bar */}
-      <View style={styles.topBar}>
-        <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-          <Image style={styles.image} source={require("@/_images/logo.png")} />
-        </TouchableOpacity>
-        <Text style={styles.heading}>Empowering the Nation</Text>
-      </View>
-
-      {/* Nav Buttons Row */}
-      <View style={styles.navRow}>
-        <TouchableOpacity style={[styles.navBtn, styles.activeBtn]} onPress={() => navigation.navigate("index")}>
-          <Text style={styles.activeText}>Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navBtn} onPress={() => navigation.navigate("programmes")}>
-          <Text style={styles.inactiveText}>Programs</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navBtn} onPress={() => navigation.navigate("admissions")}>
-          <Text style={styles.inactiveText}>Admissions</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navBtn} onPress={() => navigation.navigate("updates")}>
-          <Text style={styles.inactiveText}>Updates</Text>
-        </TouchableOpacity>
-      </View>
+      <NavigationBar />
 
       {/* FlatList with Slider + Content */}
       <FlatList
@@ -51,7 +30,7 @@ export default function Index() {
           if (item.type === "carousel") {
             return (
               <View>
-                <Text style={styles.sectionHeading}>Our Programs</Text>
+                <Text style={styles.sectionHeading}>Our Programmes</Text>
                 <Carousel />
               </View>
             );
