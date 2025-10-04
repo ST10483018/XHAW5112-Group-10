@@ -1,11 +1,13 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import NavigationBar from "@/components/navigationbar";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const life_skills = () => {
   return (
-    <View>
-      <Text>life_skills</Text>
-    </View>
+    <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
+      <NavigationBar />
+    </SafeAreaView>
   )
 }
 

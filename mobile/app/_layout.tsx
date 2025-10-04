@@ -6,7 +6,7 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer
         screenOptions={{
-          headerShown: false, // ✅ remove default header
+          headerShown: false, // remove default header
         }}
       >
         <Drawer.Screen
