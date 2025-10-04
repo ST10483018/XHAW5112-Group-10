@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { TouchableOpacity, Image } from "react-native";
 
-import Index from "@/app";
+import Index from "@/app/index";
 import programmes from "@/app/programmes";
 import admissions from "@/app/admissions";
 import updates from "@/app/updates";
