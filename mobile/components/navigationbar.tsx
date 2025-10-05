@@ -2,9 +2,10 @@ import React from "react";
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { useNavigation, useRoute, DrawerActions } from "@react-navigation/native";
 
-export default function NavigationBar() {
+export default function NavigationBar({ title = "Empowering the Nation" }) {
   const navigation = useNavigation();
-  const route = useRoute(); // ✅ gives current screen name
+  const route = useRoute(); //  gives current screen name
+  
 
   // current route name (e.g., "index", "programmes", etc.)
   const currentRoute = route.name;
@@ -23,7 +24,7 @@ export default function NavigationBar() {
         <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}>
           <Image style={styles.image} source={require("@/_images/logo.png")} />
         </TouchableOpacity>
-        <Text style={styles.heading}>Empowering the Nation</Text>
+        <Text style={styles.heading}>{title}</Text>
       </View>
 
       {/* 🔹 Navigation Row */}

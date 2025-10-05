@@ -20,7 +20,7 @@ export default function Index() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
-      <NavigationBar />
+      <NavigationBar title = "Empowering the Nation" />
 
       {/* FlatList with Slider + Content */}
       <FlatList
@@ -53,53 +53,6 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  topBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 20,
-    paddingTop: 20,
-    marginBottom: 10,
-  },
-  image: {
-    width: 60,
-    height: 60,
-    borderRadius: 25,
-  },
-  heading: {
-    flex: 1,
-    textAlign: "center",
-    fontSize: 24,
-    fontWeight: "bold",
-    marginRight: 50, // balances the logo left
-  
-  },
-  navRow: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-    marginBottom: 5,
-    paddingHorizontal: 10,
-  },
-  navBtn: {
-    paddingVertical: 6,
-    paddingHorizontal: 14,
-    borderRadius: 15,
-    borderWidth: 1,
-    borderColor: "#C2C2C2",
-    backgroundColor: "#fff",
-  },
-  activeBtn: {
-    backgroundColor: "#0051FF",
-    borderColor: "#0051FF",
-  },
-  activeText: {
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: 14,
-  },
-  inactiveText: {
-    color: "#000",
-    fontSize: 14,
-  },
   item: {
     padding: 20,
     marginVertical: 8,
@@ -125,4 +78,5 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "black",
   },
+
 });

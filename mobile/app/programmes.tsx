@@ -6,7 +6,7 @@ import NavigationBar from "@/components/navigationbar";
 const programmes = () => {
   return (
     <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
-      <NavigationBar />
+      <NavigationBar title = "Our Programmes" />
     </SafeAreaView>
   )
 }

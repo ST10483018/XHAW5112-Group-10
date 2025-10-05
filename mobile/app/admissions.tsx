@@ -6,7 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const admissions = () => {
   return (
     <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
-      <NavigationBar />
+      <NavigationBar title = "Admissions" />
     </SafeAreaView>
   )
 }

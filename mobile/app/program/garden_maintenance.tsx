@@ -6,7 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const garden_maintenance = () => {
   return (
     <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
-      <NavigationBar />
+      <NavigationBar title = "Garden Maintenance"/>
     </SafeAreaView>
   )
 }

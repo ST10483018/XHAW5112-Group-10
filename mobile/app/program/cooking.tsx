@@ -6,7 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const cooking = () => {
   return (
     <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
-      <NavigationBar />
+      <NavigationBar title = "Cooking" />
     </SafeAreaView>
   )
 }
