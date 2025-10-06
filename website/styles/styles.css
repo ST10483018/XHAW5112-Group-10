@@ -1,5 +1,6 @@
 #wrapper {
-  width: 1500px;
+  width: auto;
+  height: auto;
 }
 * {
   margin: 0;
@@ -67,29 +68,6 @@ body {
 .navbar ul li a.active {
   color: #ffd700;
   border-bottom: 2px solid #ffd700;
-}
-
-/*Responsive Design*/
-@media (max-width: 768px) {
-  .navbar .navdiv {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .navbar ul li {
-    margin: 10px 0;
-  }
-
-  .navbar ul li a {
-    display: block;
-    width: 100%;
-  }
 }
 
 html, body {
@@ -439,25 +417,6 @@ form textarea {
   background: #333;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  /* Total fees */
-.total-fee {
-  margin-top: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: right;
-  color: #333;
-}
-}
 
 #moto, #moto2 {
   margin-top: 50px;
@@ -630,4 +589,40 @@ body {
   .container {
     grid-template-columns: 1fr;
   }
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Total fees */
+  .total-fee {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+  }
+  .navbar .navdiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .navbar ul li a {
+    display: block;
+    width: 100%;
+  }
+
 }
