@@ -84,7 +84,7 @@ const Programmes = () => {
         </View>
 
         {/* --- 6-Week Courses --- */}
-        <Text style={[styles.heading, styles.subheading]}>6-Week Courses</Text>
+        <Text style={[styles.heading, styles.subheading]}>Six-Week Courses</Text>
 
         <View style={styles.row}>
           {/* Cooking */}
