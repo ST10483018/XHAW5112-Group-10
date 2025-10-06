@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { useNavigation, useRoute, DrawerActions } from "@react-navigation/native";
 
 export default function NavigationBar({ title = "Empowering the Nation" }) {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const route = useRoute(); //  gives current screen name
   
 
