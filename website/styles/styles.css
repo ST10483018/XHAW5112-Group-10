@@ -593,8 +593,15 @@ body {
     flex-direction: column;
   }
   .nav-links {
-    flex-direction: column;
-    gap: 15px;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+  }
+  .nav-links li {
+    display: block;
+    right: 100px;
+    top: 150px;
+    width: 175px;
   }
 
   /* Total fees */
