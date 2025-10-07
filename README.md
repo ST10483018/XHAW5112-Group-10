@@ -1,5 +1,9 @@
 # XHAW5112-Group-10
-Tiro, Herb, Tumi
+Tiro: ST10496079
+Herb:
+Tumi: ST10483018
+
+# installation steps 
 
 # References
 
