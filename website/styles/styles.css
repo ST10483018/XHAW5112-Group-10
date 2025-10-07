@@ -154,9 +154,9 @@ footer {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 8px;
-    right: 1100px;
+   margin-left: -500PX;
     position: absolute;
-    margin-top: 20px ;
+    margin-top: 80px ;
     font-size: 1em;
     cursor: pointer;
 }
