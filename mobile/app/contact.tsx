@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   const handleSubmit = () => {
-    // Here you could integrate with an API or backend
+    // this is for form submission logic
     console.log('Form submitted:', form);
     alert('Message submitted!');
     setForm({
