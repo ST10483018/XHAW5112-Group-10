@@ -15,7 +15,7 @@ const child_minding = () => {
         </View>
         <View>
         
-          <Text style={styles.title}>6 Week Child Minding Course</Text>
+          <Text style={styles.title2}>6 Week Child Minding Course</Text>
 
           <Image
             source={require("@/_images/steptodown.com525012.jpg")}
@@ -83,6 +83,7 @@ header: {
     height: 220,
     borderRadius: 10,
     marginBottom: 20,
+    marginTop: 20
   },
   purpose: {
     fontSize: 16,
@@ -115,5 +116,12 @@ header: {
     width: "48%",
     height: 140,
     borderRadius: 10,
+  },
+
+  title2: {
+    fontSize:20,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginTop:20 
   }
 })
