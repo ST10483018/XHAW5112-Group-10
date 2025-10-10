@@ -23,17 +23,16 @@ const child_minding = () => {
           />
 
           <Text style={styles.purpose}>
-            Purpose: To provide alterations and new garment tailoring services.
+            Purpose: To provide basic child and baby care.
           </Text>
 
           <Text style={styles.contentHeading}>Course Content:</Text>
-          <Text style={styles.list}>• Types of stitches</Text>
-          <Text style={styles.list}>• Threading a sewing machine</Text>
-          <Text style={styles.list}>• Sewing buttons, zips, hems and seams</Text>
-          <Text style={styles.list}>• Alterations</Text>
-          <Text style={styles.list}>• Designing and sewing new garments</Text>
+          <Text style={styles.list}>• Birth to six-month old baby needs</Text>
+          <Text style={styles.list}>• Seven-month to one year old needs</Text>
+          <Text style={styles.list}>• Toddler needs</Text>
+          <Text style={styles.list}>• Educational toys</Text>
 
-          <Text style={styles.price}>Price for course: R1500</Text>
+          <Text style={styles.price}>Price for course: R750</Text>
 
           <View style={styles.imageRow}>
             <Image
