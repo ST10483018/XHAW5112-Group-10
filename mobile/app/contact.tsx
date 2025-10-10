@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View, Text, TextInput, Button, ScrollView, StyleSheet, KeyboardAvoidingView, Platform,} from 'react-native';
+import {View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet, KeyboardAvoidingView, Platform,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import NavigationBar from '@/components/navigationbar';
 import { WebView } from 'react-native-webview';
@@ -72,7 +72,10 @@ const Contact = () => {
             onChangeText={(text) => handleChange('message', text)}
           />
 
-          <Button title="Submit" onPress={handleSubmit} />
+          
+          <TouchableOpacity style={styles.button} onPress={handleSubmit}>
+            <Text style={styles.buttonText}>Submit</Text>
+          </TouchableOpacity>
 
           <Text style={[styles.heading, { marginTop: 40 }]}>Our Locations</Text>
 
@@ -128,10 +131,30 @@ const styles = StyleSheet.create({
   },
   mapContainer: {
     marginTop: 20,
+    marginBottom: -98,
   },
   map: {
     height: 300,
     marginBottom: 20,
+  },
+  button: {
+    backgroundColor: '#2C2C2C',
+    paddingVertical: 6,
+    paddingHorizontal: 11,
+    width: 120,
+    textAlign: 'center',
+    alignSelf: 'center',
+    borderRadius: 8,
+    paddingTop: 15,
+    paddingBottom: 15,
+    marginBottom: -10,
+    marginTop: 20,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
 });
 
