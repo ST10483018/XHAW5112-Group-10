@@ -20,6 +20,12 @@ const Contact = () => {
     // Here you could integrate with an API or backend
     console.log('Form submitted:', form);
     alert('Message submitted!');
+    setForm({
+    name: '',
+    surname: '',
+    email: '',
+    message: '',
+    });
   };
 
   return (
