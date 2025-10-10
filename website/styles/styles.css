@@ -648,4 +648,41 @@ body {
     width: 90%;
     padding: 15px;
   }
+  #about {
+    width: 100%;
+    position: static;
+    padding: 0 10px 40px 10px;
+    font-size: 1em;
+    margin: 0;
+  }
+  #about-img1,
+  #about-img2 {
+    width: 90vw;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    object-fit: cover;
+  }
+  main h2,
+  main p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container,
+  .student-details,
+  .academic-status,
+  .course-list,
+  .amount-due {
+    width: 100%;
+    min-width: 0;
+    padding: 1rem;
+  }
+  body {
+    padding: 0.5rem;
+  }
+  #wrapper {
+    width: 100vw;
+    padding: 0;
+  }
 }
