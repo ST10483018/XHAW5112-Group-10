@@ -3,7 +3,7 @@ import React from 'react'
 import { useNavigation } from "@react-navigation/native";
 
 const apply = () => {
-    const navigation = useNavigation();
+    const navigation = useNavigation<any>();
   return (
     <TouchableOpacity onPress={() => navigation.navigate("admissions")}>
         <Text style={styles.apply }>Apply</Text>
