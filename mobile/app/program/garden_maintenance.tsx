@@ -7,12 +7,12 @@ import Apply from '@/components/apply';
 
 const garden_maintenance = () => {
   return (
-    <ScrollView style={styles.container}>
-      <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
-        <View style={styles.header}>
+    <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
+      <View style={styles.header}>
           <Back />
           <Text style={styles.title}>Garden Maintenance</Text>
         </View>
+    <ScrollView style={styles.container}>
         <View>
         
           <Text style={styles.title2}>6 Week Garden Maintenance Course</Text>
@@ -47,11 +47,11 @@ const garden_maintenance = () => {
         </View>
         <View style={{padding: 20}}>
         </View>
-      </SafeAreaView>
       <View>
           <Apply />
       </View>
     </ScrollView>
+    </SafeAreaView>
   )
 }
 
@@ -119,6 +119,5 @@ header: {
     fontSize:20,
     fontWeight: "bold",
     textAlign: "center",
-    marginTop:20 
   }
 })

@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 import NavigationBar from "@/components/navigationbar";
 
 const Programmes = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
 
   return (
     <SafeAreaView style={styles.safeArea}>

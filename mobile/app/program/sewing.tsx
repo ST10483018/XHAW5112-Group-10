@@ -7,12 +7,12 @@ import Apply from '@/components/apply';
 
 const sewing = () => {
   return (
-    <ScrollView style={styles.container}>
-      <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
-        <View style={styles.header}>
+    <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
+      <View style={styles.header}>
           <Back />
           <Text style={styles.title}>Sewing</Text>
         </View>
+    <ScrollView style={styles.container}>
         <View>
         
           <Text style={styles.title2}>6 Month Sewing Course</Text>
@@ -49,11 +49,11 @@ const sewing = () => {
         </View>
         <View style={{padding: 20}}>
         </View>
-      </SafeAreaView>
       <View>
           <Apply />
       </View>
     </ScrollView>
+    </SafeAreaView>
   )
 }
 
@@ -120,8 +120,7 @@ header: {
   title2: {
     fontSize:20,
     fontWeight: "bold",
-    textAlign: "center",
-    marginTop:20 
+    textAlign: "center", 
   }
 })
 

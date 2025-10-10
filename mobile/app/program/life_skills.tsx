@@ -6,12 +6,13 @@ import Apply from '@/components/apply';
 
 const life_skills = () => {
   return (
-    <ScrollView style={styles.container}>
-      <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
-        <View style={styles.header}>
+    <SafeAreaView  style={{ flex: 1, backgroundColor: "#fff" }}>
+      <View style={styles.header}>
           <Back />
           <Text style={styles.title}>Life Skills</Text>
         </View>
+    <ScrollView style={styles.container}>
+        
         <View>
         
           <Text style={styles.title2}>6 Month Life Skills Course</Text>
@@ -47,11 +48,12 @@ const life_skills = () => {
         </View>
         <View style={{padding: 20}}>
         </View>
-      </SafeAreaView>
+      
       <View>
           <Apply />
       </View>
     </ScrollView>
+    </SafeAreaView>
   )
 }
 
@@ -120,6 +122,5 @@ header: {
     fontSize:20,
     fontWeight: "bold",
     textAlign: "center",
-    marginTop:20 
   }
 })
