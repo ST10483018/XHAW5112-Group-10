@@ -3,7 +3,8 @@ Tiro: ST10496079
 Herb: ST10488458
 Tumi: ST10483018
 
-# installation steps 
+# Install required dependencies
+npm install react-native-safe-area-context react-native-webview babel-plugin-module-resolver
 
 # References
 
