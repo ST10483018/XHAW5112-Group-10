@@ -91,6 +91,12 @@ export default function RootLayout() {
               drawerItemStyle: { display: "none" },
             }}
           />
+          <Drawer.Screen
+            name="studentcontext"
+            options={{
+              drawerItemStyle: { display: "none" },
+            }}
+          />
         </Drawer>
       </StudentProvider>
     </GestureHandlerRootView>
