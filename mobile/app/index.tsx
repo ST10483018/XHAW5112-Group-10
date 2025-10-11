@@ -20,6 +20,7 @@ export default function Index() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
+      {/* Navigation bar */}
       <NavigationBar title = "Empowering the Nation" />
 
       {/* FlatList with Slider + Content */}
