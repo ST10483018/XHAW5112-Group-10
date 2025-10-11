@@ -597,7 +597,7 @@ body {
     width: 100%;
     min-width: 0;
     padding: 1rem;
-    grid-template-columns: 1fr; /* Applies only if using CSS Grid */
+    grid-template-columns: 1fr;
   }
 
   body {
@@ -673,5 +673,16 @@ body {
 
   .admission-section {
     padding: 30px 10px;
+  }
+  .prog-img {
+    max-width: 100%;
+  }
+
+  .sew-img {
+    max-width: 250px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
   }
 }
