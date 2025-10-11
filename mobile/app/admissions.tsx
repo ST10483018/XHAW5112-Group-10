@@ -32,7 +32,7 @@ type FormState = {
 
 // --- Component ---
 const Admissions: React.FC = () => {
-  const navigation = useNavigation<NativeStackNavigationProp<any>>();
+  const navigation = useNavigation<any>();
   const { setStudent } = useStudent();
 
   const courses: Course[] = [
@@ -111,7 +111,7 @@ const Admissions: React.FC = () => {
     });
 
     Alert.alert("Success", "Application submitted!");
-    navigation.navigate("Updates");
+    navigation.navigate("updates");
   };
 
   return (
@@ -195,7 +195,7 @@ const Admissions: React.FC = () => {
         )}
 
         {/* Deposit Button */}
-        <TouchableOpacity style={styles.button} onPress={handleDeposit}>
+        <TouchableOpacity style={styles.button} onPress={handleDeposit} >
           <Text style={styles.buttonText}>Apply</Text>
         </TouchableOpacity>
 
