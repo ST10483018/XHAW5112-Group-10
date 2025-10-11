@@ -121,6 +121,7 @@ export default function Carousel() {
   ];
 
   return (
+    // Carousel of programmes
     <View style={styles.container}>
       <AnimatedFlatList
         data={DATA}
@@ -134,7 +135,7 @@ export default function Carousel() {
         }}
         keyExtractor={(item) => item.id}
         renderItem={({ item, index }) => (
-          <Item index={index} scrollX={scrollX} item={item} />
+          <Item index={index} scrollX={scrollX} item={item}/>
         )}
         onScroll={(event) => {
           setScrollX(event.nativeEvent.contentOffset.x);

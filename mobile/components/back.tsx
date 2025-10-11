@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 
 export default function Back() {
   const navigation = useNavigation<any>();
-
+//Back button
   return (
     <View  style={styles.container}>
     <TouchableOpacity onPress={() => navigation.navigate("programmes")}>

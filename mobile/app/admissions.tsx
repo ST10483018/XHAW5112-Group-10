@@ -12,7 +12,6 @@ import NavigationBar from "@/components/navigationbar";
 import DropDownPicker, { ItemType } from "react-native-dropdown-picker";
 import { useStudent } from "@/app/studentcontext";
 import { useNavigation } from "@react-navigation/native";
-import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 // --- Types ---
 type Course = {
