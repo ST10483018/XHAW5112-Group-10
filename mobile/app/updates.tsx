@@ -2,8 +2,22 @@ import React from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import NavigationBar from "@/components/navigationbar";
+import { useStudent } from "@/app/studentcontext"; // Adjust path as needed
 
 const Updates = () => {
+  const { student } = useStudent();
+
+  if (!student) {
+    return (
+      <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
+        <NavigationBar title="Updates" />
+        <View style={styles.container}>
+          <Text style={styles.infoText}>No student data available.</Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
       <NavigationBar title="Updates" />
@@ -13,13 +27,13 @@ const Updates = () => {
         <Text style={styles.sectionTitle}>Student Details</Text>
         <View style={styles.detailsBox}>
           <Text style={styles.detailText}>
-            <Text style={styles.detailLabel}>Name: </Text>Nokthula
+            <Text style={styles.detailLabel}>Name: </Text>{student.name}
           </Text>
           <Text style={styles.detailText}>
-            <Text style={styles.detailLabel}>Surname: </Text>Mazibuko
+            <Text style={styles.detailLabel}>Surname: </Text>{student.surname}
           </Text>
           <Text style={styles.detailText}>
-            <Text style={styles.detailLabel}>Student N: </Text>231456789
+            <Text style={styles.detailLabel}>Student N: </Text>{student.studentNumber}
           </Text>
         </View>
 
@@ -30,40 +44,32 @@ const Updates = () => {
             <Text style={styles.courseHeaderText}>Start Dates</Text>
           </View>
 
-          {[
-            { course: "Sewing", date: "8th February 2026" },
-            { course: "First Aid", date: "27th March 2026" },
-            { course: "Cooking", date: "27th March 2026" },
-            { course: "Landscaping", date: "8th February 2026" },
-            { course: "Life Skills", date: "10th March 2026" },
-          ].map((item, index) => (
+          {student.courses.map((item, index) => (
             <View key={index} style={styles.courseRow}>
-              <Text style={styles.courseText}>{item.course}</Text>
-              <Text style={styles.courseText}>{item.date}</Text>
+              <Text style={styles.courseText}>{item.name}</Text>
+              <Text style={styles.courseText}>{item.startDate}</Text>
             </View>
           ))}
         </View>
 
         {/* Academic Status */}
         <Text style={styles.sectionTitle}>Academic Status</Text>
-        <Text style={styles.pendingText}>Pending</Text>
+        <Text style={styles.pendingText}>{student.status}</Text>
 
         <View style={styles.infoBox}>
-          <Text style={styles.infoText}>
-            Your application is currently being processed. Look out for updates
-            here soon.
-          </Text>
+          <Text style={styles.infoText}>{student.message}</Text>
         </View>
 
         {/* Amount Due */}
         <Text style={styles.sectionTitle}>Amount Due</Text>
         <View style={styles.infoBox}>
-          <Text style={styles.infoText}>No outstanding balance.</Text>
+          <Text style={styles.infoText}>{student.amountDue}</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
   );
 };
+
 
 export default Updates;
 
