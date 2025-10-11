@@ -141,5 +141,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 15,
     lineHeight: 20,
+    justifyContent: "center",
+    fontWeight: "bold",
   },
 });

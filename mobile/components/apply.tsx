@@ -5,6 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 const apply = () => {
     const navigation = useNavigation<any>();
   return (
+    // Apply button
     <TouchableOpacity onPress={() => navigation.navigate("admissions")}>
         <Text style={styles.apply }>Apply</Text>
     </TouchableOpacity>
