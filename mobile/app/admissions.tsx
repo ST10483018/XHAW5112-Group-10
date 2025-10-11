@@ -196,7 +196,7 @@ const Admissions: React.FC = () => {
 
         {/* Deposit Button */}
         <TouchableOpacity style={styles.button} onPress={handleDeposit}>
-          <Text style={styles.buttonText}>Deposit</Text>
+          <Text style={styles.buttonText}>Apply</Text>
         </TouchableOpacity>
 
         <Text style={styles.note}>

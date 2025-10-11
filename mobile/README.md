@@ -15,6 +15,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
    npx expo start
    ```
+   # 3. 
+   npm install react-native-dropdown-picker
+
 
 In the output, you'll find options to open the app in a
 
