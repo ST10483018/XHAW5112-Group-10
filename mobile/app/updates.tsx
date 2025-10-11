@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import NavigationBar from "@/components/navigationbar";
-import { useStudent } from "@/app/studentcontext"; // Adjust path as needed
+import { useStudent } from "@/app/studentcontext";
 
 const Updates = () => {
   const { student } = useStudent();

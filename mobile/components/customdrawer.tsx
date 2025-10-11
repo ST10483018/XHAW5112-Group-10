@@ -5,6 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 export default function customdrawer (props:any){
   return (
+    // drawer styling
     <View style={{flex:1}}>
         <DrawerContentScrollView {...props} scrollEnabled={false}>
             <View style={{padding: 20}}>
