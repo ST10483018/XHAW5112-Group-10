@@ -33,7 +33,7 @@ const Updates = () => {
             <Text style={styles.detailLabel}>Surname: </Text>{student.surname}
           </Text>
           <Text style={styles.detailText}>
-            <Text style={styles.detailLabel}>Student N: </Text>{student.studentNumber}
+            <Text style={styles.detailLabel}>Student Number: </Text>{student.studentNumber}
           </Text>
         </View>
 
