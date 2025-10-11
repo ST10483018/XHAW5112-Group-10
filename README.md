@@ -4,7 +4,7 @@ Herb: ST10488458
 Tumi: ST10483018
 
 # Install required dependencies
-npm install react-native-safe-area-context react-native-webview babel-plugin-module-resolver
+npm install react-native-safe-area-context react-native-webview babel-plugin-module-resolver react-native-dropdown-picker
 
 # References
 
