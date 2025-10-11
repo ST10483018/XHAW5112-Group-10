@@ -17,7 +17,7 @@ import { useRouter } from "expo-router";
 
 const { width: SRC_WIDTH } = Dimensions.get("window");
 
-// Smaller card width to show next/previous previews
+// Image sizes
 const CARD_LENGTH = SRC_WIDTH * 0.75;  
 const SPACING = SRC_WIDTH * 0.02;      
 const SIDECARD_LENGTH = (SRC_WIDTH - CARD_LENGTH) / 2; 
@@ -38,8 +38,7 @@ function Item({ index, scrollX, item }: ItemProps) {
     index * (CARD_LENGTH + SPACING),
     (index + 1) * (CARD_LENGTH + SPACING),
   ];
-
-  // Animate scale + opacity
+// opacity of sliding images/cards
   const scale = interpolate(scrollX, inputRange, [0.85, 1, 0.85], Extrapolate.CLAMP);
   const opacity = interpolate(scrollX, inputRange, [0.6, 1, 0.6], Extrapolate.CLAMP);
 

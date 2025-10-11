@@ -4,10 +4,10 @@ import { useNavigation, useRoute, DrawerActions } from "@react-navigation/native
 
 export default function NavigationBar({ title = "Empowering the Nation" }) {
   const navigation = useNavigation<any>();
-  const route = useRoute(); //  gives current screen name
+  const route = useRoute();
   
 
-  // current route name (e.g., "index", "programmes", etc.)
+  // navigation route
   const currentRoute = route.name;
 
   const navItems = [
@@ -19,7 +19,7 @@ export default function NavigationBar({ title = "Empowering the Nation" }) {
 
   return (
     <>
-      {/* 🔹 Top Bar */}
+      {/* Top Bar */}
       <View style={styles.topBar}>
         <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}>
           <Image style={styles.image} source={require("@/_images/logo.png")} />
@@ -27,7 +27,7 @@ export default function NavigationBar({ title = "Empowering the Nation" }) {
         <Text style={styles.heading}>{title}</Text>
       </View>
 
-      {/* 🔹 Navigation Row */}
+      {/*  Navigation Row */}
       <View style={styles.navRow}>
         {navItems.map((item) => {
           const isActive = currentRoute === item.route;

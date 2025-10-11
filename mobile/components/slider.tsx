@@ -7,7 +7,7 @@ const slider = () => {
 
     const flatlistRef = useRef<FlatList<any>>(null);
 
-    //dimensions of the screen
+    //dimensions for screen
     const ScreenWidth = Dimensions.get("window").width;
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -44,7 +44,7 @@ const slider = () => {
         }
     ];
 
-    //auto scroll images
+    //auto scrolling for images
     useEffect(() => {
         const interval = setInterval(() => {
             if (activeIndex === sliderData.length - 1) {
@@ -72,7 +72,7 @@ const slider = () => {
         offset: ScreenWidth * index,
         index: index,
     });
-    //Displaying the images
+    // images displayed
     const renderItem = ({ item, index }: { item: { id: string; image: any }; index: number }) => {
         return (
             <View style={{ width: ScreenWidth, alignItems: "center" }}>
@@ -80,17 +80,13 @@ const slider = () => {
             </View>
         );
     };
-
-    //Handle scroll event
   
-
     const handleScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
         const scrollPosition = event.nativeEvent.contentOffset.x;
         const index = scrollPosition / ScreenWidth;
         setActiveIndex(index);
     };
-
-    //Render dot indicators for image slider
+// dot indicators
     const renderDotIndicators = () => {
         return sliderData.map((dot, index)=>{
 
