@@ -586,6 +586,15 @@ body {
   color: #555;
 }
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   /* Layout containers */
