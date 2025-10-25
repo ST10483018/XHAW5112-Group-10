@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ✅ Show student info only if updates.html layout is present
+  
   const student = JSON.parse(localStorage.getItem("studentData"));
 
   const nameEl = document.getElementById("studentName");
@@ -16,16 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // ✅ Populate student details
+    // Populate student details
     nameEl.textContent = student.name;
     surnameEl.textContent = student.surname;
     numberEl.textContent = student.studentNumber;
 
-    // ✅ Academic status
+    // Academic status
     statusEl.textContent = student.status;
     messageEl.textContent = student.message;
 
-    // ✅ Course list
+    // Course list
     courseRowsEl.innerHTML = student.courses
       .map(course => `
         <div class="table-row">
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `)
       .join("");
 
-    // ✅ Amount due
+    // Amount due
     let total = 0;
     amountBoxEl.innerHTML = student.courses
       .map(course => {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return; // Skip form logic on updates.html
   }
 
-  // ✅ Continue with form and dropdown logic (admission.html)
+  // Continue with form and dropdown logic (admission.html)
   const dropdownToggle = document.getElementById("dropdownToggle");
   const optionsContainer = document.getElementById("options");
   const selectedTags = document.getElementById("selectedTags");
