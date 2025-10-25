@@ -208,7 +208,7 @@ const Admissions: React.FC = () => {
 
 export default Admissions;
 
-// --- Styles ---
+
 const styles = StyleSheet.create({
   input: {
     borderWidth: 0,
