@@ -6,6 +6,11 @@ Tumi: ST10483018
 # Install required dependencies
 npm install react-native-safe-area-context react-native-webview babel-plugin-module-resolver react-native-dropdown-picker
 
+# Change log
+## Fixed Price calculation
+
+## Fixed dropdown
+
 # References
 
 ### Images

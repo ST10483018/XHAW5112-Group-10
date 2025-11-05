@@ -6,7 +6,7 @@ import { StudentProvider } from "@/app/studentcontext";
 export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      {/* 🔹 Wrap your Drawer inside StudentProvider */}
+      {/* Wrap your Drawer inside StudentProvider */}
       <StudentProvider>
         <Drawer
           drawerContent={customdrawer}
