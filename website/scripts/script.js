@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ✅ Show student info only if updates.html layout is present
   const student = JSON.parse(localStorage.getItem("studentData"));
 
   const nameEl = document.getElementById("studentName");
@@ -10,22 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const courseRowsEl = document.getElementById("courseRows");
   const amountBoxEl = document.getElementById("amountBox");
 
+  // --- UPDATES PAGE ---
   if (nameEl && surnameEl && numberEl && statusEl && messageEl && courseRowsEl && amountBoxEl) {
     if (!student) {
       nameEl.textContent = "No student data found.";
       return;
     }
 
-    // ✅ Populate student details
     nameEl.textContent = student.name;
     surnameEl.textContent = student.surname;
     numberEl.textContent = student.studentNumber;
-
-    // ✅ Academic status
     statusEl.textContent = student.status;
     messageEl.textContent = student.message;
 
-    // ✅ Course list
     courseRowsEl.innerHTML = student.courses
       .map(course => `
         <div class="table-row">
@@ -35,27 +31,23 @@ document.addEventListener("DOMContentLoaded", () => {
       `)
       .join("");
 
-    // ✅ Amount due
-    let total = 0;
-    amountBoxEl.innerHTML = student.courses
-      .map(course => {
-        total += course.price;
-        return `<div class="amount-row"><span>${course.name}</span><span>R${course.price}</span></div>`;
-      })
-      .join("");
-    amountBoxEl.innerHTML += `<div class="amount-row total"><span>Total</span><span>R${total}</span></div>`;
-
-    return; // Skip form logic on updates.html
+    //  Show fee breakdown
+    amountBoxEl.innerHTML = `
+      <div class="amount-row"><span>Subtotal</span><span>R${student.subtotal}</span></div>
+      <div class="amount-row"><span>Discount (${student.discountPercentage}%)</span><span>-R${student.discount}</span></div>
+      <div class="amount-row"><span>VAT (15%)</span><span>R${student.vat}</span></div>
+      <div class="amount-row total"><span>Total Due</span><span>${student.totalFee}</span></div>
+    `;
+    return;
   }
 
-  // ✅ Continue with form and dropdown logic (admission.html)
+  // --- ADMISSIONS PAGE ---
   const dropdownToggle = document.getElementById("dropdownToggle");
   const optionsContainer = document.getElementById("options");
   const selectedTags = document.getElementById("selectedTags");
   const totalFeeDisplay = document.getElementById("totalFee");
   const form = document.querySelector("form");
 
-  let totalFee = 0;
   let selectedCourses = [];
 
   dropdownToggle.addEventListener("click", () => {
@@ -67,14 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const value = option.getAttribute("data-value");
       const price = parseInt(option.getAttribute("data-price"));
 
-      if (selectedCourses.includes(value)) return;
+      if (selectedCourses.find(c => c.value === value)) return;
 
-      selectedCourses.push(value);
+      selectedCourses.push({ value, price });
 
       const tag = document.createElement("div");
       tag.classList.add("tag");
-      tag.setAttribute("data-value", value);
-      tag.setAttribute("data-price", price);
       tag.textContent = value;
 
       const removeBtn = document.createElement("button");
@@ -83,15 +73,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       removeBtn.addEventListener("click", () => {
         selectedTags.removeChild(tag);
-        selectedCourses = selectedCourses.filter(c => c !== value);
-        totalFee -= price;
+        selectedCourses = selectedCourses.filter(c => c.value !== value);
         updateTotal();
       });
 
       tag.appendChild(removeBtn);
       selectedTags.appendChild(tag);
 
-      totalFee += price;
       updateTotal();
     });
   });
@@ -103,7 +91,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function updateTotal() {
-    totalFeeDisplay.textContent = `Total Fee: R${totalFee}`;
+    const subtotal = selectedCourses.reduce((sum, c) => sum + c.price, 0);
+
+    let discountPercentage = 0;
+    if (selectedCourses.length === 2) discountPercentage = 5;
+    if (selectedCourses.length === 3) discountPercentage = 10;
+    if (selectedCourses.length > 3) discountPercentage = 15;
+
+    const discount = subtotal * (discountPercentage / 100);
+    const vat = (subtotal - discount) * 0.15;
+    const total = subtotal - discount + vat;
+
+    totalFeeDisplay.textContent = `Total Fee (incl. VAT): R${total.toFixed(2)}`;
+    totalFeeDisplay.dataset.subtotal = subtotal;
+    totalFeeDisplay.dataset.discount = discount.toFixed(2);
+    totalFeeDisplay.dataset.discountPercentage = discountPercentage;
+    totalFeeDisplay.dataset.vat = vat.toFixed(2);
+    totalFeeDisplay.dataset.total = total.toFixed(2);
   }
 
   form.addEventListener("submit", (e) => {
@@ -130,11 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const selectedCourseList = selectedCourses.map(course => ({
-      name: course,
-      startDate: courseStartDates[course] || "TBA",
-      price: parseInt(
-        document.querySelector(`[data-value="${course}"]`).getAttribute("data-price")
-      ),
+      name: course.value,
+      startDate: courseStartDates[course.value] || "TBA",
+      price: course.price,
     }));
 
     const studentData = {
@@ -142,7 +144,11 @@ document.addEventListener("DOMContentLoaded", () => {
       surname,
       studentNumber: Math.floor(Math.random() * 90000000 + 10000000).toString(),
       courses: selectedCourseList,
-      totalFee: `R${totalFee}`,
+      subtotal: totalFeeDisplay.dataset.subtotal,
+      discount: totalFeeDisplay.dataset.discount,
+      discountPercentage: totalFeeDisplay.dataset.discountPercentage,
+      vat: totalFeeDisplay.dataset.vat,
+      totalFee: `R${totalFeeDisplay.dataset.total}`,
       status: "Pending",
       message: "Your application is currently being processed. Look out for updates on here soon.",
     };

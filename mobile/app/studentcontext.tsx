@@ -38,3 +38,5 @@ export const useStudent = (): StudentContextType => {
   }
   return context;
 };
+
+export default StudentProvider;
