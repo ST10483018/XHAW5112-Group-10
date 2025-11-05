@@ -8,8 +8,7 @@ npm install react-native-safe-area-context react-native-webview babel-plugin-mod
 
 # Change log
 ## Fixed Price calculation
-
-## Fixed dropdown
+Added the discount to price. 
 
 # References
 
