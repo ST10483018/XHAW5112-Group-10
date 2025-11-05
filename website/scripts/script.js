@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `)
       .join("");
 
-    //  Show fee breakdown
+    // Show fee breakdown
     amountBoxEl.innerHTML = `
       <div class="amount-row"><span>Subtotal</span><span>R${student.subtotal}</span></div>
       <div class="amount-row"><span>Discount (${student.discountPercentage}%)</span><span>-R${student.discount}</span></div>
